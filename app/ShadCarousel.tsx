@@ -25,7 +25,7 @@ export function CarouselPlugin() {
       description:
         "A full-stack storefront with product listings, cart, and Stripe checkout(in progress).",
       github: "https://github.com/Vourpal/Bird-Shop",
-      live: "https://ecommerce.yoursite.com",
+      // live: "https://ecommerce.yoursite.com",
     },
     {
       id: 2,
