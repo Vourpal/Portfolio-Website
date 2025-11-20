@@ -27,19 +27,40 @@ export default function Home() {
       </section>
 
       {/* Content section below */}
-      <section className="min-h-screen bg-black text-white p-8">
+      <section className="min-h-screen lg:min-h-[50vh] bg-black text-white p-8">
         <h2 className="text-2xl font-bold mb-4">About Me</h2>
+        <p className="mb-4">
+          I’m Bruno — a premed student turned software engineer after completing
+          my Master’s in Computer and Information Technology at the University
+          of Pennsylvania. My background in biomedical science taught me to
+          think in systems, which now fuels my approach to building scalable,
+          user-focused applications.
+        </p>
+        <p className="mb-4">
+          I specialize in full-stack development using React.js, Next.js,
+          Node.js, and MongoDB, and I’m equally comfortable working with Python,
+          SQL, and REST APIs. I’ve built and deployed projects across cloud
+          platforms like Azure and AWS, and I enjoy integrating data pipelines,
+          LLMs, and interactive dashboards.
+        </p>
         <p>
-          I’m Bruno — a software engineer and Penn graduate who transitioned
-          from biomedical science to computer science. I build full-stack,
-          backend, frontend, and data-focused projects with a strong emphasis on
-          clean architecture and practical solutions.
+          I’m actively seeking opportunities where I can contribute to impactful
+          software, collaborate with thoughtful teams, and continue exploring
+          the intersection of AI, UX, and full-stack engineering. Whether
+          remote, hybrid, or abroad, I’m excited to grow and build systems that
+          serve real people.
         </p>
       </section>
 
-      <section className=" bg-gray-900 text-white p-8">
-        <h2>Current/Completed projects</h2>
-        <CarouselPlugin></CarouselPlugin>
+      <section className="bg-gray-900 text-white px-8 py-16">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-8 tracking-wide">
+            Current & Completed Projects
+          </h2>
+          <div className="mt-4">
+            <CarouselPlugin />
+          </div>
+        </div>
       </section>
       <footer className="bg-black text-white p-8 border-t border-gray-800">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
