@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Orbitron } from "next/font/google";
 import "./globals.css";
 
@@ -19,20 +19,44 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "Software Developer Portfolio",
-  description: "Bruno Oros' portfolio",
+  title: "Bruno Oros — Software Engineer",
+  description:
+    "Portfolio website of Bruno Oros, a software engineer with full-stack, backend, and data engineering experience.",
+  openGraph: {
+    title: "Bruno Oros — Software Engineer",
+    description:
+      "Portfolio website of Bruno Oros, a software engineer with full-stack, backend, and data engineering experience.",
+    url: "https://portfolio-website-one-bay-93.vercel.app/",
+    siteName: "Bruno Oros Portfolio",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png", // Add this file or remove if you don't want an image
+        width: 1200,
+        height: 630,
+        alt: "Bruno Oros Portfolio Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bruno Oros — Software Engineer",
+    description:
+      "Portfolio website of Bruno Oros, a software engineer with full-stack, backend, and data engineering experience.",
+    images: ["/og-image.png"],
+  },
 };
 
-export const viewport = {
+export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
