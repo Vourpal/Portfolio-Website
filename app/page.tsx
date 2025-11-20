@@ -13,12 +13,12 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="title-card text-white p-4 rounded text-center font-orbitron bg-[#322E94]/90 flex w-screen flex-col">
+          <div className="title-card text-white py-8 px-4 rounded text-center font-orbitron bg-[#322E94]/95 flex w-screen flex-col">
             <div>
-              <strong className="text-2xl sm:text-4xl md:text-5xl block">
+              <strong className="text-2xl sm:text-8xl md:text-10xl block">
                 Bruno Oros
               </strong>
-              <span className="text-xl sm:text-2xl md:text-3xl">
+              <span className="text-xl sm:text-4xl md:text-6xl">
                 Software Engineer
               </span>
             </div>

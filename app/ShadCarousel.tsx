@@ -54,7 +54,7 @@ export function CarouselPlugin() {
       id: 5,
       title: "Portfolio website",
       description:  "code for the website you are currently on",
-      github: ""
+      github: "https://github.com/Vourpal/Portfolio-Website"
     }
   ];
 
